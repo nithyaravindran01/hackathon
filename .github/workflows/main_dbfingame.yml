@@ -30,7 +30,8 @@ jobs:
         with: 
           java-version: ${{ env.JAVA_VERSION }}
           distribution: 'temurin'
-
+      - name: Check Maven version
+          run: mvn -v
       - name: 'Restore Project Dependencies Using Mvn'
         shell: pwsh
         run: 
