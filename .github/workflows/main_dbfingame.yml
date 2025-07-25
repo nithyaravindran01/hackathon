@@ -34,7 +34,7 @@ jobs:
         run: mvn -v
       - name: 'Restore Project Dependencies Using Mvn'
         shell: pwsh
-        run:          
+        run: |        
           cd dbfingame
           mvn clean package
                 
